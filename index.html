@@ -8,110 +8,135 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
         }
-        .profile-image {
+        .profile-photo {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
         }
+        .resume-header {
+            background-color: #fff;
+            padding: 30px;
+            border-bottom: 2px solid #ddd;
+        }
+        .resume-header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .resume-header h2 {
+            font-size: 1.5rem;
+            color: #6c757d;
+        }
         .section-title {
             font-weight: 600;
-            font-size: 1.5rem;
             margin-top: 30px;
+            font-size: 1.2rem;
             border-bottom: 2px solid #000;
-            padding-bottom: 10px;
+            padding-bottom: 5px;
+        }
+        .details, .references {
+            border-left: 2px solid #000;
+            padding-left: 20px;
         }
         .list-group-item {
             border: none;
             padding-left: 0;
         }
-        .contact-info span {
-            font-weight: 600;
-        }
     </style>
 </head>
 <body>
 
-    <!-- Header -->
-    <section class="container text-center mt-5">
-        <img src="https://s6.imgcdn.dev/Fz0HN.png" alt="Profile Photo" class="profile-image mb-3">
-        <h1>Prasanta Kumar Parida</h1>
-        <p class="lead">Application Development Manager| Software Engineer</p>
-    </section>
-
-    <!-- Contact Info -->
-    <section class="container text-center contact-info">
-        <p><span>Email:</span> your.email@example.com | <span>Phone:</span> +123 456 7890</p>
-        <p><span>LinkedIn:</span> linkedin.com/in/yourprofile | <span>GitHub:</span> github.com/yourprofile</p>
-    </section>
-
-    <!-- Profile Summary -->
-    <section class="container">
-        <h2 class="section-title">Profile</h2>
-        <p>I am a passionate web developer with experience in building responsive and user-friendly websites. Skilled in HTML, CSS, JavaScript, and modern frameworks like Bootstrap and React. I am committed to writing clean, maintainable code and continuously improving my skills.</p>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="container">
-        <h2 class="section-title">Experience</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <h5>Senior Web Developer</h5>
-                <p class="text-muted">ABC Tech | 2019 - Present</p>
-                <ul class="list-group">
-                    <li class="list-group-item">Developed and maintained responsive websites.</li>
-                    <li class="list-group-item">Led a team of 5 developers in creating web solutions.</li>
-                    <li class="list-group-item">Implemented features that improved site speed by 30%.</li>
-                </ul>
+    <!-- Header Section -->
+    <section class="container resume-header text-center">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-md-start">
+                <h1>Daniel Jones</h1>
+                <h2>Photographer</h2>
+                <p>Experienced and innovative Photographer bringing forth a true passion for capturing life’s moments through a lens.</p>
             </div>
-            <div class="col-md-6">
-                <h5>Junior Web Developer</h5>
-                <p class="text-muted">XYZ Solutions | 2017 - 2019</p>
-                <ul class="list-group">
-                    <li class="list-group-item">Collaborated with designers to create interactive web applications.</li>
-                    <li class="list-group-item">Assisted in debugging and troubleshooting code.</li>
-                    <li class="list-group-item">Gained expertise in front-end frameworks.</li>
-                </ul>
+            <div class="col-md-4 text-center">
+                <img src="https://via.placeholder.com/150" alt="Profile Photo" class="profile-photo">
             </div>
+        </div>
+    </section>
+
+    <!-- Employment History Section -->
+    <section class="container mt-5">
+        <h3 class="section-title">Employment History</h3>
+        <div class="mb-4">
+            <h5>Photographer at Worldly Pictures, Vancouver</h5>
+            <p class="text-muted">June 2017 - October 2019</p>
+            <ul class="list-group">
+                <li class="list-group-item">Consulted with clients regarding photo needs and desires.</li>
+                <li class="list-group-item">Pressed clients to bring out the best moments for candid shots.</li>
+                <li class="list-group-item">Offered fresh ideas in studio and outdoor photography.</li>
+                <li class="list-group-item">Developed and presented creative concepts.</li>
+                <li class="list-group-item">Edited and enhanced images for commercial use.</li>
+                <li class="list-group-item">Created slideshow presentations for top tier clients.</li>
+            </ul>
+        </div>
+        <div>
+            <h5>Photographer Assistant at Freelance</h5>
+            <p class="text-muted">March 2015 - May 2017</p>
+            <ul class="list-group">
+                <li class="list-group-item">Assisted with set-up and lighting prior to shoots.</li>
+                <li class="list-group-item">Handled reflectors and other equipment during outdoor sessions.</li>
+                <li class="list-group-item">Handled paperwork, billing, and scheduling.</li>
+                <li class="list-group-item">Brought forth a positive attitude and problem-solving skills.</li>
+            </ul>
         </div>
     </section>
 
     <!-- Education Section -->
     <section class="container">
-        <h2 class="section-title">Education</h2>
+        <h3 class="section-title">Education</h3>
+        <div class="mb-4">
+            <h5>Bachelor of Marketing, McGill University</h5>
+            <p class="text-muted">August 2007 - May 2011</p>
+        </div>
+        <div>
+            <h5>High School Diploma at Lakeside Academy, Montreal</h5>
+            <p class="text-muted">September 2003 - June 2007</p>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section class="container mt-5">
         <div class="row">
             <div class="col-md-6">
-                <h5>Bachelor of Computer Science</h5>
-                <p class="text-muted">University of Technology | 2013 - 2017</p>
+                <h3 class="section-title">Details</h3>
+                <p>1977 Coleman Blvd,<br> Vancouver, BC V6J 2H5, United States</p>
+                <p>Phone: +1 604-889-8943</p>
+                <p>Email: daniel.jones@email.com</p>
+            </div>
+            <div class="col-md-6">
+                <h3 class="section-title">Skills</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">Digital and Non-digital Cameras</li>
+                    <li class="list-group-item">Lighting Techniques</li>
+                    <li class="list-group-item">Marketing Strategy</li>
+                    <li class="list-group-item">Project Management</li>
+                    <li class="list-group-item">Creativity</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="container">
-        <h2 class="section-title">Skills</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <ul class="list-group">
-                    <li class="list-group-item">HTML & CSS</li>
-                    <li class="list-group-item">JavaScript</li>
-                    <li class="list-group-item">Bootstrap</li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <ul class="list-group">
-                    <li class="list-group-item">React</li>
-                    <li class="list-group-item">Git & GitHub</li>
-                    <li class="list-group-item">Responsive Design</li>
-                </ul>
-            </div>
-        </div>
+    <!-- References Section -->
+    <section class="container mt-5 mb-5">
+        <h3 class="section-title">References</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Christine Faulkner - McGill University | christine@email.com | 514-229-2238</li>
+            <li class="list-group-item">John Rey - Photographer | rey.john@email.com | 604-887-4382</li>
+            <li class="list-group-item">Sophia Montano - Client</li>
+        </ul>
     </section>
 
     <!-- Footer -->
-    <footer class="text-center mt-5 mb-3">
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    <footer class="text-center">
+        <p>&copy; 2024 Daniel Jones. All Rights Reserved.</p>
     </footer>
 
     <!-- Bootstrap JS -->
