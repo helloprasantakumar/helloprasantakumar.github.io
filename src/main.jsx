@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import "./styles.css";
 
-const resumeUrl = "/Resume.pdf";
+const resumeUrl = `${import.meta.env.BASE_URL}Resume.pdf`;
 
 const skills = {
   Backend: ["Java 8/17/21", "Spring Boot", "Spring Security", "Spring Data JPA", "Hibernate", "REST APIs", "Microservices", "Spring Cloud", "API Gateway", "System Design"],
